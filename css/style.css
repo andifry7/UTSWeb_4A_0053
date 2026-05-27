@@ -50,13 +50,15 @@ body {
 
 .hero-title {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: 700;
   line-height: 1.1;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .hero-description {
   color: #94a3b8;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 35px;
 }
@@ -72,6 +74,11 @@ body {
   padding: 14px 28px;
   border-radius: 12px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #3b82f6;
 }
 
 .btn-outline-custom {
@@ -80,8 +87,19 @@ body {
   padding: 14px 28px;
   border-radius: 12px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
-.hero-image {
+.btn-outline-custom:hover {
+  background-color: #1e293b;
+}
+
+.hero-image-wrapper {
   padding-left: 40px;
+}
+
+.hero-image-card {
+  background-color: #111827;
+  padding: 20px;
+  border-radius: 30px;
 }
