@@ -167,3 +167,26 @@ img {
   color: #94a3b8;
   line-height: 1.8;
 }
+
+/* Choose Section */
+
+.choose-section {
+  background-color: #0f172a;
+}
+
+.choose-card {
+  background-color: #111827;
+  border: 1px solid #1e293b;
+  padding: 40px 30px;
+  border-radius: 24px;
+  height: 100%;
+}
+
+.choose-card h3 {
+  margin-bottom: 18px;
+}
+
+.choose-card p {
+  color: #94a3b8;
+  line-height: 1.8;
+}
