@@ -261,6 +261,30 @@ img {
   margin-top: 10px;
 }
 
+/* Portfolio Filter */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #111827;
+  border: 1px solid #1e293b;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
 /* Process Section */
 .process-section {
   background-color: #081120;
