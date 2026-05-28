@@ -605,6 +605,18 @@ textarea.form-control {
 
 /* Responsive */
 @media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #111827;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
   .hero-section {
     text-align: center;
     padding-top: 140px;
