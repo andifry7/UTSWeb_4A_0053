@@ -544,6 +544,21 @@ textarea.form-control {
   transform: translateY(0);
 }
 
+/* Button Hover Effect */
+.btn-primary-custom,
+.btn-outline-custom {
+  transition: 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline-custom:hover {
+  transform: translateY(-3px);
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .hero-section {
