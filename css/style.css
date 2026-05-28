@@ -483,7 +483,7 @@ img {
 
 /* CTA Section */
 .cta-section {
-  background-color: #0f172a;
+  background-color: #081120;
 }
 
 .cta-wrapper {
@@ -514,7 +514,7 @@ img {
 
 /* Contact Section */
 .contact-section {
-  background-color: #081120;
+  background-color: #0f172a;
 }
 
 .contact-info {
@@ -541,14 +541,14 @@ img {
 }
 
 .form-control {
-  background-color: #0f172a;
+  background-color: #081120;
   border: 1px solid #1e293b;
   padding: 15px 20px;
   color: white;
 }
 
 .form-control:focus {
-  background-color: #0f172a;
+  background-color: #081120;
   border-color: #2563eb;
   box-shadow: none;
   color: white;
