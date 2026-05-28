@@ -1,4 +1,6 @@
 console.log("Pixel++ Website Loaded");
+const sections = $("section");
+const navLinks = $(".nav-link");
 
 // Navbar Scroll Effect
 $(window).scroll(function () {
@@ -24,3 +26,24 @@ function revealOnScroll() {
 
 $(window).on("scroll", revealOnScroll);
 revealOnScroll();
+
+// Active Navbar Menu
+$(window).on("scroll", function () {
+  let current = "";
+
+  sections.each(function () {
+    const sectionTop = $(this).offset().top - 150;
+
+    if ($(window).scrollTop() >= sectionTop) {
+      current = $(this).attr("id");
+    }
+  });
+
+  navLinks.removeClass("active");
+
+  navLinks.each(function () {
+    if ($(this).attr("href") === "#" + current) {
+      $(this).addClass("active");
+    }
+  });
+});
