@@ -8,3 +8,19 @@ $(window).scroll(function () {
     $(".navbar").removeClass("navbar-scrolled");
   }
 });
+
+// Reveal on Scroll
+function revealOnScroll() {
+  $(".reveal").each(function () {
+    let windowHeight = $(window).height();
+    let elementTop = $(this).offset().top;
+    let revealPoint = 120;
+
+    if (elementTop < window.scrollY + windowHeight - revealPoint) {
+      $(this).addClass("active");
+    }
+  });
+}
+
+$(window).on("scroll", revealOnScroll);
+revealOnScroll();
