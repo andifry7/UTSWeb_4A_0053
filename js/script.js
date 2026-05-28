@@ -2,6 +2,7 @@ console.log("Pixel++ Website Loaded");
 const sections = $("section");
 const navLinks = $(".nav-link");
 const words = ["Modern Website", "Digital Experience", "Creative Solutions"];
+const counters = document.querySelectorAll(".counter");
 
 // Navbar Scroll Effect
 $(window).on("scroll", function () {
@@ -96,4 +97,27 @@ $(".filter-btn").click(function () {
       $(this).parent().hide(200);
     }
   });
+});
+
+// statistic Counter Animation
+counters.forEach((counter) => {
+  counter.innerText = "0";
+
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+
+    const current = +counter.innerText;
+
+    const increment = target / 100;
+
+    if (current < target) {
+      counter.innerText = `${Math.ceil(current + increment)}`;
+
+      setTimeout(updateCounter, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  updateCounter();
 });
