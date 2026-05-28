@@ -38,6 +38,19 @@ img {
   display: block;
 }
 
+.section-heading {
+  margin-bottom: 70px;
+}
+
+.hero-description,
+.section-description {
+  max-width: 600px;
+}
+
+.contact-section .section-description {
+  max-width: 100%;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
