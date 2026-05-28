@@ -625,6 +625,15 @@ textarea.form-control {
   box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
 }
 
+/* hover image */
+.portfolio-card img {
+  transition: 0.5s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
 /* Reveal Animation */
 .reveal {
   opacity: 0;
