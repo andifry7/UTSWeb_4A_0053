@@ -169,7 +169,6 @@ img {
 }
 
 /* Choose Section */
-
 .choose-section {
   background-color: #0f172a;
 }
@@ -189,4 +188,27 @@ img {
 .choose-card p {
   color: #94a3b8;
   line-height: 1.8;
+}
+
+/* Statistics Section */
+.stats-section {
+  background-color: #081120;
+}
+
+.stats-card {
+  background-color: #111827;
+  border-radius: 24px;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid #1e293b;
+}
+
+.stats-card h2 {
+  font-size: 3rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  color: #94a3b8;
 }
