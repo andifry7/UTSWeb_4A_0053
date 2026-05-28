@@ -4,6 +4,11 @@ const navLinks = $(".nav-link");
 const words = ["Modern Website", "Digital Experience", "Creative Solutions"];
 const counters = document.querySelectorAll(".counter");
 
+// Loader Screen
+$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut(800);
+});
+
 // Navbar Scroll Effect
 $(window).scroll(function () {
   if ($(this).scrollTop() > 50) {
