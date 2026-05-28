@@ -5,7 +5,7 @@ const words = ["Modern Website", "Digital Experience", "Creative Solutions"];
 const counters = document.querySelectorAll(".counter");
 
 // Navbar Scroll Effect
-$(window).on("scroll", function () {
+$(window).scroll(function () {
   if ($(this).scrollTop() > 50) {
     $(".navbar").addClass("navbar-scrolled");
   } else {
@@ -26,11 +26,11 @@ function revealOnScroll() {
   });
 }
 
-$(window).on("scroll", revealOnScroll);
+$(window).scroll(revealOnScroll);
 revealOnScroll();
 
 // Active Navbar Menu
-$(window).on("scroll", function () {
+$(window).scroll(function () {
   let current = "";
 
   sections.each(function () {
@@ -120,4 +120,22 @@ counters.forEach((counter) => {
   };
 
   updateCounter();
+});
+
+// Back to Top Button
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    $(".back-to-top").fadeIn();
+  } else {
+    $(".back-to-top").fadeOut();
+  }
+});
+
+$(".back-to-top").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    600,
+  );
 });
