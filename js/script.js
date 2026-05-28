@@ -1,6 +1,7 @@
 console.log("Pixel++ Website Loaded");
 const sections = $("section");
 const navLinks = $(".nav-link");
+const words = ["Modern Website", "Digital Experience", "Creative Solutions"];
 
 // Navbar Scroll Effect
 $(window).on("scroll", function () {
@@ -47,3 +48,35 @@ $(window).on("scroll", function () {
     }
   });
 });
+
+// Typing Effect Hero
+let wordIndex = 0;
+let charIndex = 0;
+let currentWord = "";
+let currentChar = "";
+
+function typingEffect() {
+  if (wordIndex < words.length) {
+    currentWord = words[wordIndex];
+
+    currentChar = currentWord.slice(0, charIndex++);
+
+    $(".typing-text").text(currentChar);
+
+    if (charIndex > currentWord.length) {
+      wordIndex++;
+
+      charIndex = 0;
+
+      setTimeout(typingEffect, 1000);
+    } else {
+      setTimeout(typingEffect, 100);
+    }
+  } else {
+    wordIndex = 0;
+
+    typingEffect();
+  }
+}
+
+typingEffect();
