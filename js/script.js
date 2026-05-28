@@ -3,7 +3,7 @@ const sections = $("section");
 const navLinks = $(".nav-link");
 
 // Navbar Scroll Effect
-$(window).scroll(function () {
+$(window).on("scroll", function () {
   if ($(this).scrollTop() > 50) {
     $(".navbar").addClass("navbar-scrolled");
   } else {
