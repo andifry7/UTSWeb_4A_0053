@@ -471,6 +471,31 @@ textarea.form-control {
   color: #64748b;
 }
 
+/* Card Hover Effect */
+.service-card,
+.choose-card,
+.stats-card,
+.process-card,
+.testimonial-card,
+.team-card,
+.portfolio-card,
+.contact-form-wrapper {
+  transition: 0.3s ease;
+}
+
+.service-card:hover,
+.choose-card:hover,
+.stats-card:hover,
+.process-card:hover,
+.testimonial-card:hover,
+.team-card:hover,
+.portfolio-card:hover,
+.contact-form-wrapper:hover {
+  transform: translateY(-8px);
+  border-color: rgba(96, 165, 250, 0.4);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.15);
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .hero-section {
