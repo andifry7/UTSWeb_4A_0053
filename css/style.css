@@ -31,6 +31,12 @@ img {
   background-color: #081120;
 }
 
+.navbar-scrolled {
+  background-color: rgba(8, 17, 32, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 .navbar-brand {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.5rem;
