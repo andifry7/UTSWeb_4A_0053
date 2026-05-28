@@ -80,3 +80,20 @@ function typingEffect() {
 }
 
 typingEffect();
+
+// Portfolio Filter
+$(".filter-btn").click(function () {
+  const value = $(this).attr("data-filter");
+
+  $(".filter-btn").removeClass("active");
+
+  $(this).addClass("active");
+
+  $(".portfolio-card").each(function () {
+    if (value === "all" || $(this).attr("data-category") === value) {
+      $(this).parent().show(200);
+    } else {
+      $(this).parent().hide(200);
+    }
+  });
+});

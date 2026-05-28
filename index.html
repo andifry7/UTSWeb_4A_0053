@@ -289,17 +289,19 @@
           <h2 class="section-title">Selected Projects</h2>
         </div>
         <div class="portfolio-filter">
-          <button class="filter-btn active">All</button>
+          <button class="filter-btn active" data-filter="all">All</button>
 
-          <button class="filter-btn">Web Design</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
 
-          <button class="filter-btn">Branding</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
 
-          <button class="filter-btn">Development</button>
+          <button class="filter-btn" data-filter="development">
+            Development
+          </button>
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4 reveal">
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-category="web">
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
                 alt=""
@@ -313,7 +315,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 reveal">
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-category="development">
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
                 alt=""
@@ -327,7 +329,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 reveal">
-            <div class="portfolio-card">
+            <div class="portfolio-card" data-category="branding">
               <img
                 src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop"
                 alt=""
