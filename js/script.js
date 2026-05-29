@@ -55,6 +55,10 @@ $(window).scroll(function () {
   });
 });
 
+$(".nav-link").click(function () {
+  $(".navbar-collapse").collapse("hide");
+});
+
 // Typing Effect Hero
 let wordIndex = 0;
 let charIndex = 0;

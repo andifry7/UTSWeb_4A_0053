@@ -799,6 +799,14 @@ textarea.form-control {
     margin-top: 20px;
   }
 
+  .navbar-toggler {
+    border: 1px solid #1e293b;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
   .nav-link {
     margin-left: 0;
     margin-bottom: 15px;
