@@ -632,6 +632,10 @@ img {
   color: white;
 }
 
+.form-control.error {
+  border-color: #ef4444;
+}
+
 .form-control:focus {
   background-color: #081120;
   border-color: #2563eb;
@@ -645,6 +649,16 @@ img {
 
 textarea.form-control {
   resize: none;
+}
+
+.form-alert {
+  display: none;
+  background-color: rgba(37, 99, 235, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: #60a5fa;
+  padding: 14px 18px;
+  border-radius: 14px;
+  margin-bottom: 25px;
 }
 
 /* Footer */

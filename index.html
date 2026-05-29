@@ -689,11 +689,13 @@
 
           <div class="col-lg-7">
             <div class="contact-form-wrapper">
-              <form>
+              <div class="form-alert"></div>
+              <form id="contactForm">
                 <div class="row g-4">
                   <div class="col-md-6">
                     <input
                       type="text"
+                      id="name"
                       class="form-control"
                       placeholder="Your Name"
                     />
@@ -702,6 +704,7 @@
                   <div class="col-md-6">
                     <input
                       type="email"
+                      id="email"
                       class="form-control"
                       placeholder="Your Email"
                     />
@@ -710,6 +713,7 @@
                   <div class="col-12">
                     <input
                       type="text"
+                      id="subject"
                       class="form-control"
                       placeholder="Subject"
                     />
@@ -717,6 +721,7 @@
 
                   <div class="col-12">
                     <textarea
+                      id="message"
                       class="form-control"
                       rows="6"
                       placeholder="Your Message"

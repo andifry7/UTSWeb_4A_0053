@@ -148,3 +148,43 @@ $(".back-to-top").click(function () {
     600,
   );
 });
+
+// Contact Form Validation
+$("#contactForm").submit(function (e) {
+  e.preventDefault();
+
+  let isValid = true;
+
+  const name = $("#name");
+  const email = $("#email");
+  const subject = $("#subject");
+  const message = $("#message");
+
+  $(".form-control").removeClass("error");
+
+  if (name.val().trim() === "") {
+    name.addClass("error");
+    isValid = false;
+  }
+
+  if (email.val().trim() === "") {
+    email.addClass("error");
+    isValid = false;
+  }
+
+  if (subject.val().trim() === "") {
+    subject.addClass("error");
+    isValid = false;
+  }
+
+  if (message.val().trim() === "") {
+    message.addClass("error");
+    isValid = false;
+  }
+
+  if (isValid) {
+    $(".form-alert").hide().fadeIn().text("Message sent successfully!");
+
+    $("#contactForm")[0].reset();
+  }
+});
