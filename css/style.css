@@ -102,16 +102,38 @@ img {
 }
 
 .nav-link {
-  color: #cbd5e1;
   margin-left: 18px;
+  position: relative;
+  color: #cbd5e1;
+  padding-bottom: 8px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease;
 }
 
 .nav-link.active {
   color: #60a5fa;
 }
 
+.nav-link.active::after {
+  width: 100%;
+  background-color: #2563eb;
+}
+
 .nav-link:hover {
   color: #60a5fa;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* Hero Section */
@@ -656,13 +678,29 @@ textarea.form-control {
 }
 
 .footer-links a {
+  position: relative;
   color: #94a3b8;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #60a5fa;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
 }
 
 .footer-bottom {
