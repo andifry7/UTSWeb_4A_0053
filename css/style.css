@@ -423,6 +423,24 @@ img {
   line-height: 1.8;
 }
 
+.process-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: rgba(37, 99, 235, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.process-icon i {
+  font-size: 30px;
+  color: #60a5fa;
+}
+
 /* Testimonial Section */
 .testimonial-section {
   background-color: #0f172a;
