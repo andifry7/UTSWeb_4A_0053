@@ -658,6 +658,38 @@ textarea.form-control {
   color: #64748b;
 }
 
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #111827;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+
+  border: 1px solid #1e293b;
+
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
 /* Card Hover Effect */
 .service-card,
 .choose-card,
