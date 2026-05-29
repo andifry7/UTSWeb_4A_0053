@@ -300,6 +300,24 @@ img {
   line-height: 1.8;
 }
 
+.choose-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  background-color: rgba(37, 99, 235, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+}
+
+.choose-icon i {
+  font-size: 28px;
+  color: #60a5fa;
+}
+
 /* Statistics Section */
 .stats-section {
   background-color: #081120;
