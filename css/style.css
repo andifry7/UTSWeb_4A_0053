@@ -19,6 +19,28 @@ section,
   transition: all 0.3s ease;
 }
 
+.section-glow-left,
+.section-glow-right {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: 0;
+}
+
+.section-glow-left {
+  background: rgba(37, 99, 235, 0.12);
+  top: -120px;
+  left: -120px;
+}
+
+.section-glow-right {
+  background: rgba(37, 99, 235, 0.12);
+  bottom: -120px;
+  right: -120px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -303,6 +325,8 @@ img {
 /* Choose Section */
 .choose-section {
   background-color: #0f172a;
+  position: relative;
+  overflow: hidden;
 }
 
 .choose-card {
@@ -579,6 +603,36 @@ img {
 
 .founder-info span {
   color: #60a5fa;
+}
+
+.about-section,
+.service-section,
+.choose-section,
+.stats-section,
+.portfolio-section,
+.process-section,
+.testimonial-section,
+.faq-section,
+.cta-section,
+.contact-section,
+.team-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-section .container,
+.service-section .container,
+.choose-section .container,
+.stats-section .container,
+.portfolio-section .container,
+.process-section .container,
+.testimonial-section .container,
+.faq-section .container,
+.cta-section .container,
+.contact-section .container,
+.team-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 /* Team Card */
