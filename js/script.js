@@ -101,9 +101,9 @@ $(".filter-btn").click(function () {
 
   $(".portfolio-card").each(function () {
     if (value === "all" || $(this).attr("data-category") === value) {
-      $(this).parent().show(200);
+      $(this).parent().show(1);
     } else {
-      $(this).parent().hide(200);
+      $(this).parent().hide(1);
     }
   });
 });
